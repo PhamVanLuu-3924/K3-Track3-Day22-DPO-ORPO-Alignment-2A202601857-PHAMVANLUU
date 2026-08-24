@@ -8,5 +8,10 @@ training:
   lambda_orpo: 0.1
   max_length: 512
   batch_size: 2
+  backend: mock_cpu
+  steps: 20
+  learning_rate: 1.0
 evaluation:
+  scorer: deterministic_cpu
+  validation_ratio: 0.2
   regression_prompts: docs/regression_prompts.md
